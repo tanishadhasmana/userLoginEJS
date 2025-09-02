@@ -65,7 +65,7 @@ app.post('/create', function(req, res){
           // now we create token, using jwt and our seceret code, and sending that token in frontend, as cookie and it saved in UI
           let token = jwt.sign({email}, "ShhhhhhSeCeReT");
           res.cookie("token", token); //making this token as cookie, and for every route it will send as token
-      res.send(createdUser); //now the userdata, shown in UI, with the encrypted password
+          res.send(createdUser); //now the userdata, shown in UI, with the encrypted password
         }
       })
     }
@@ -94,18 +94,11 @@ app.post('/create', function(req, res){
         const user = users.find(u => u.email === email);
 
         // if u not finded the user with the same mail, so wrong
-        if(!user){
-          res.send("Something went wrong");
-        }
+        if(!user)   return res.send("Something went wrong"); 
         // if user found, compare its password, with the hashed password in the DB, so can verify if it already exists or not
         bcrypt.compare(password, user.password,function(err,result){
-          if(err){
-             res.send("Something went wrong");
-          }
-          if(!result){
-             res.send("Something went wrong");
-          }
-
+          if(err)  return res.send("Something went wrong"); 
+          if(!result)   return res.send("Something went wrong"); 
           // and if matched then generate token-- becoz we send cookie to browser to save user
           const token = jwt.sign({email: user.email}, "ShhhhhhSeCeReT");
            res.cookie("token", token);
