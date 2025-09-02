@@ -1,0 +1,7 @@
+{"username":"tanisha","email":"TANISHADHASMANA2004@gmail.com","password":"$2b$10$r06nhYWI324IqQOvgeCbrOhMFX1o4jQk4Mw2em1/fB9Q21kUj5cnm","age":"21"}
+
+{"username":"tanisha","email":"TANISHADHASMANA2004@gmail.com","password":"$2b$10$2CuOxKHOEXo7oPcHkTN53ufpOMSalyCloZ5Z79pX6Cm8eaVjaPEIq","age":"23"}
+
+{"username":"tanisha","email":"TANISHADHASMANA2004@gmail.com","password":"$2b$10$iHjapEVjVGtDkGrfOizZXuWG91.Fn8OHf8BYODamM/CPj/xWp4ltG","age":"21"}
+
+{"username":"Rahul","email":"rahul@gmail.com","password":"$2b$10$PEAEp0ane5CiSBu6Pic6ZOJtaXCKDRjXB3wyJ8GTcxJzUy26WHqiW","age":"25"}
